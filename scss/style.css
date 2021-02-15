@@ -1,0 +1,40 @@
+* {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #F1F5F8;
+}
+
+h1, h2, h3 {
+  color: #102A42;
+}
+
+a {
+  color: #102A42;
+  text-decoration: none;
+}
+
+.login-form {
+  background-color: #fff;
+  border: 5px;
+  max-width: 400px;
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+}
+
+.menu {
+  margin-top: 4rem;
+  text-align: right;
+}
+
+.menu a {
+  font-weight: 500;
+}
+
+.center {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
