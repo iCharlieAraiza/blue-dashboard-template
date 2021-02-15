@@ -1,0 +1,131 @@
+@import "./colors";
+
+*{
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: $background-color;
+}
+
+h1,h2,h3{
+    color: $font-h-color;
+}
+
+a{
+    color: $link-color;
+    text-decoration: none;
+}
+
+
+.login-form{
+    background-color: #fff;
+    border: 5px;
+    max-width: 400px;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+}
+
+
+.menu{
+    margin-top: 4rem;
+    text-align: right;
+    a{
+        font-weight: 500;
+    }
+}
+
+
+.card{
+    background-color: #fff;
+    padding: 1rem;
+
+    h3{
+        margin: 0;
+    }
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.head-title{
+    display: flex;
+    margin-bottom: 1rem;
+
+    h1{
+        margin: 0;
+    }
+    .btn{
+        margin-left: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: $btn-color;
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+
+.status{
+    font-weight: 500;
+}
+
+.edit{
+    color: $edit-color;
+}
+
+.remove{
+    color: $remove-color;
+}
+
+.active{
+    color: $active-color;
+}
+
+
+.credentials{
+
+    .card{
+        max-width: 340px;
+        min-width: 330px;
+        margin: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 8px 6px -6px #a5a5a5;
+
+        .key{
+            color: $font-grey;
+        }
+
+        .actions{
+            margin-top: 1rem;
+            font-size: 14px;
+
+            .status{
+                float: left;
+            }
+            .action-links{
+                float: right;
+                a{
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+    }
+}
+
+
+
+
+@import "./components"
