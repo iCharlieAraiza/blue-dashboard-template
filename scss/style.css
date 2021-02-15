@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #F1F5F8;
+  background-color: #e5ebee;
 }
 
 h1, h2, h3 {
@@ -32,6 +32,97 @@ a {
 
 .menu a {
   font-weight: 500;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.head-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.head-title h1 {
+  margin: 0;
+}
+
+.head-title .btn {
+  margin-left: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #009FBC;
+  color: #fff;
+  font-size: 15px;
+}
+
+.status {
+  font-weight: 500;
+}
+
+.edit {
+  color: #49A6E9;
+}
+
+.remove {
+  color: #E20000;
+}
+
+.active {
+  color: #169605;
+}
+
+.credentials .card {
+  max-width: 340px;
+  min-width: 330px;
+  margin: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 6px -6px #a5a5a5;
+          box-shadow: 0 8px 6px -6px #a5a5a5;
+}
+
+.credentials .card .key {
+  color: #7B7B7B;
+}
+
+.credentials .card .actions {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.credentials .card .actions .status {
+  float: left;
+}
+
+.credentials .card .actions .action-links {
+  float: right;
+}
+
+.credentials .card .actions .action-links a {
+  margin-left: 5px;
+}
+
+.credentials .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .center {
