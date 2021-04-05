@@ -1,0 +1,45 @@
+h1{
+    font-size: $font-title-size;
+    color: $color-secundary;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+    .title{
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 22px;
+            color: $color-inactive;
+            margin-right: 10px;
+            opacity: 80%;
+        }
+    }
+
+}
+
+.main-btn{
+    background-color: $color-auxiliar;
+    padding: 7px 1.5rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #707070;
+    box-shadow: $shadow;
+    cursor: pointer;
+    &:hover{
+        opacity: 80%;
+    }
+}
+
+.search-icon{
+    border: none;
+    background-color: transparent;
+    color: $color-secundary;
+}

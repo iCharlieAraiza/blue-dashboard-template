@@ -1,0 +1,113 @@
+.project-card{
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: $shadow;
+
+    &.inactived{
+        opacity: 60%;
+        background-color: #e7e7e7;
+        //box-shadow: none;
+        h2{
+            color: $color-inactive;
+        }
+    }
+
+    h2{
+        color: $color-title;
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    h3,p,i{
+        color: $color-secundary;
+    }
+
+
+    .title-card{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .more-btn{
+        font-size: 26px;
+        color: #a1a1a1;
+        i{
+            font-size: 20px;
+        }
+    }
+
+    .description-container{
+        margin-top: 1.5rem;
+        p{
+            margin: 0;
+            //height: 2rem;
+            font-size: 15px;
+        }
+
+    }
+
+    .project-description{
+        display: flex;
+        flex-wrap: wrap;
+        .section{
+            width: 33%;
+            min-width: 6.5rem;
+            p{
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+        h3{
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+    }
+
+    .term-limit{
+        display: flex;
+        align-items: center;
+        i{
+            margin-right: 3px;
+        }
+    }
+
+    .status-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .status-sign{
+        width: 12px;
+        height: 12px;
+        display: block;
+        border-radius: 50%;
+        border: 2px solid #414141;
+        margin-left: 5px;
+    }
+
+    .active{
+        background-color: $color-greenon;
+    }
+    .completed{
+        background-color: $color-auxiliar;
+    }
+    .disabled{
+        background-color: transparent;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    .project-card{
+        .description-container{
+            p{
+                height: 2rem;
+            }
+        }
+    }
+
+ }

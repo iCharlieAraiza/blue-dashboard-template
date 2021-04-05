@@ -1,0 +1,71 @@
+.login-container{
+    
+    font-size: 15px;
+
+    h1{
+        color: $color-title;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 3rem;
+        i{
+            font-size: 30px;
+            color: $color-auxiliar;
+        }
+    }
+
+    form{
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 1.6rem 2rem;
+        box-shadow: $shadow;
+        input{
+            width: 100%;
+
+        }
+    }
+
+}
+
+
+.btn-sign{
+    background-color: $color-auxiliar;
+    color: white;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid rgb(161, 161, 161);
+    font-weight: 500;
+    &:hover{
+        opacity: 80%;
+    }
+}
+
+
+.form-group{
+    margin: 1rem 0;
+    label{
+        font-size: 15px;
+        font-weight: 500;
+        i{
+            color: #a5a5a5;
+            font-size: 13px;
+            margin-right: 7px;
+        }
+    }
+}
+
+.form-control{
+    margin: 12px 0;
+    input{
+        padding: 12px;
+        border: 1px solid silver;
+        border-radius: 1px;
+    }
+}
+
+form{
+    label, p{
+        color: $color-grey-dark;
+    }
+}
