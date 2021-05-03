@@ -1,0 +1,47 @@
+.menu-top{
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: #fff;
+    
+
+    a{
+        font-weight: 800;
+    }
+
+    .menu{
+        margin-right: auto;
+        a{
+            color: $color-inactive;
+
+        }
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        li{
+            margin: 0 1rem;
+        }
+    }
+
+    a.active, .login-section a {
+        color: $color-title;
+        &:hover{
+            color: #9e9e9e;
+        }
+    }
+
+}
+
+.login-section{
+    display: flex;
+    align-items: center;
+    i{
+        color: $color-inactive;
+        margin-right: 5px;
+    }
+}

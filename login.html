@@ -6,7 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="scss/style.css">
-    <title>Document</title>
+    <title>Server Container</title>
+
+
+<style>
+input, select, button{
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #9c9c9c;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#btn{
+    background-color: cornflowerblue;
+}
+
+</style>
+
 </head>
 <body>
     <main>
@@ -19,17 +41,32 @@
                 <h1 class="page-title center">Log-in</h1>
                     <form action="">
                         <label for="username">User</label>
-                        <div class="inut-rich">
-                            <input type="text" name="username" id="">
+                        <div class="input-box">
+                            <input type="text" placeholder="Username" value="admin">
                         </div>
 
                         <label for="password">Password</label>
-                        <div class="inut-rich">
-                            <input type="password" name="password" id="">
+                        <div class="input-box">
+                            <input type="password" name="password" id="" placeholder="Your password">
                         </div>
 
-                        <input type="button" value="Enter">
 
+                        <label for="select">Select your App</label>
+                        <div class="input-box">
+                            <select>
+                                <option value="1">CRUD SpringBoot 1</option>
+                                <option value="2">CRUD SpringBoot 1(A)</option>
+                                <option value="3">Serialize app</option>
+                                <option value="3">CódigoHábil API REST laravel app</option>
+                            </select>                        
+                        </div>
+
+                        <label for="username">Port</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="Username" value="80">
+                        </div>
+
+                        <button type="button" value="Enter" style="background-color: #6a96a0;color: #FFFF;border: 1px solid grey;border-radius: 3px;" id="btn">Send</button>
                     </form>
            </div>
 
@@ -39,5 +76,16 @@
         </div>
 
     </main>
+
+<script>
+    document.getElementById("btn").onclick = ()=> {
+        alert("You will redirect");
+        window.location.href = "http://localhost:8080/";
+    };
+;
+
+
+</script>
+
 </body>
 </html>

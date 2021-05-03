@@ -4,6 +4,11 @@
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
 body{
     background-color: $background-color;
 }
@@ -98,6 +103,7 @@ a{
 
         .key{
             color: $font-grey;
+            font-size: 14px;
         }
 
         .actions{
@@ -126,6 +132,92 @@ a{
 }
 
 
+.form{ 
+    .head-title{
+        h1{
+            margin: auto;
+        }
+    }
+}
+
+.form-box{
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 8px 6px -6px #a5a5a5;
+
+    form{
+        margin-top: 1rem
+    };
+
+    label{
+        font-weight: 500;
+        color: $font-h-color;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 14px;
+    }
+
+    input,select{
+        width: 100%;
+        padding:10px;
+        border: none;
+    }
+
+    .input-box{
+        border: 1px solid #e0e0e0;
+        margin: 1rem 0 ;
+    }
+
+    .submit-btn{
+        margin: 2rem 0 1rem 0;
+        input{
+            padding: 1rem;
+            background-color: $btn-color;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+.application{
+    .wrapper{
+        box-shadow: 0 8px 6px -6px #a5a5a5;
+        margin-top: 2rem;
+    }
+    .card{
+        border-bottom: 1px solid #b5b5b5;
+        margin-bottom: 1rem;
+
+        span{
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+
+        .label{
+            color: #6f6f6f;
+            font-size: 14px;
+        }
+
+        div{
+            margin-top: 10px;
+        }
+
+        .action-links{
+            text-align: right;
+        }
+
+        .edit{
+            margin-right: 10px;
+        }
+
+    }
+
+}
 
 
 @import "./components"
